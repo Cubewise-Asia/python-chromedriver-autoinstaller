@@ -167,7 +167,7 @@ def download_chromedriver(path:str=None):
     if not chromedriver_version:
         logging.warning('Can not find chromedriver for currently installed chrome version.')
         return
-    major_version = get_major_version(chromedriver_version)
+    major_version = ''#get_major_version(chromedriver_version)
 
     if path:
         if not os.path.isdir(path):
